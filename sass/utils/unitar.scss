@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #212121;
+}
+li {
+  list-style-type: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+header, section, footer {
+  width: 100%;
+}
+%Flex-conteiner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+%our-goods-images {
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+%button {
+  height: 50px;
+  letter-spacing: 0.06em;
+  color: $footer-color;
+  background: $nav-color;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: $timing-transform, $timing-function, all;
+}

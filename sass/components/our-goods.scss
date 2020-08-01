@@ -1,0 +1,51 @@
+/*Переваги*/
+.our-goods {
+  @extend %Flex-conteiner;
+  margin-top: 94px;
+  display: flex;
+  li {
+    width: 270px;
+    height: 251px;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+.our-goods-images {
+  @extend %Flex-conteiner;
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+.our-goods-images-1 {
+  background-image: url(../images/icon/antenna-1.svg);
+  @extend %our-goods-images;
+}
+.our-goods-images-2 {
+  background-image: url(../images/icon/clock-1.svg);
+  @extend %our-goods-images;
+}
+.our-goods-images-3 {
+  background-image: url(../images/icon/diagram-1.svg);
+  @extend %our-goods-images;
+}
+.our-goods-images-4 {
+  background-image: url(../images/icon/astronaut-1.svg);
+  @extend %our-goods-images;
+}
+.our-goods-title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.our-goods-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $grey-color;
+  margin-top: 10px;
+}

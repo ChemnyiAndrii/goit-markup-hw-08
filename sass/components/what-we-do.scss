@@ -1,0 +1,51 @@
+/*Чим ми займаємось*/
+.what-we-do {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .we-do {
+    @extend %Flex-conteiner;
+    display: flex;
+    margin-top: 50px;
+     li {
+        width: 370px;
+        max-height: 294px;
+        position: relative;
+        display: block;
+        &:not(:first-child) {
+            margin-left: 30px;
+          }
+         p {
+            text-align: center;
+            padding-top: 27px;
+          }
+      }
+     img {
+        display: block;
+      }
+  }
+    .we-do-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $footer-color;
+  }
+  .we-do-container {
+    position: absolute;
+    bottom: 0px;
+    height: 70px;
+    width: 370px;
+    background: rgba(47, 48, 58, 0.8);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  

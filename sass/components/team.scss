@@ -1,0 +1,71 @@
+/*НАша команда*/
+.team {
+    background: #f5f4fa;
+    padding: 94px 0px;
+    &>div{
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+  }
+  .team-card {
+    @extend %Flex-conteiner;
+    display: flex;
+    margin-top: 50px;
+    width: 1170px;
+    >li {
+      width: 270px;
+      background:  $footer-color;
+      box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+      border-radius: 0px 0px 4px 4px;
+    }
+     li:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+  .team-card-comteiner{
+    @extend %Flex-conteiner;
+    display: flex;
+}
+  .team-card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .team-card-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $grey-color;
+    margin-bottom: 16px;
+  }
+  .team-card-social {
+    @extend %Flex-conteiner;
+    display: flex;
+    padding-bottom: 24px;
+     svg {
+      height: 44px;
+      width: 44px;
+      fill: $grey-light;
+      transition-property: all;
+      transition-duration: $timing-transform;
+      transition-timing-function: $timing-function;
+      border-radius: 50%;
+      &:hover {
+        fill: $footer-color;
+        background-color: $nav-color;
+        border-radius: 50%;
+      }
+    }
+     li:not(:first-child) {
+      margin-left: 10px;
+    }
+  }

@@ -1,0 +1,85 @@
+/*ФУТЕР*/
+.footer {
+  @extend %Flex-conteiner;
+  background: #2f303a;
+  color: $footer-color;
+  display: flex;
+  margin: 0 auto;
+}
+.footer-conteiner {
+  max-width: 1600px;
+  padding-bottom: 60px;
+  border: none;
+  padding-top: 60px;
+  background: #2f303a;
+  align-items: baseline;
+}
+.adressa {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  padding-top: 20px;
+  margin-right: 69px;
+  a {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
+  }
+}
+.footer-social {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 12px;
+  li:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-social-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  fill: $footer-color;
+  transition-property: background-color;
+  transition-duration: $timing-transform;
+  transition-timing-function: $timing-function;
+}
+.footer-social-icon:hover {
+  background-color: $nav-color;
+}
+.footer p {
+  margin-bottom: 20px;
+}
+.footer-form {
+  margin-left: 94px;
+  display: inline-flex;
+  width: 570px;
+  padding-top: 12px;
+}
+
+.mail-bottom::after {
+  width: 24px;
+  height: 24px;
+  content: ' ';
+  margin-left: 10px;
+  background-image: url(../images/icon/icon-send.svg);
+  background-size: contain;
+  background-position: center;
+}
+.mail-form {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  padding-left: 15px;
+  margin-top: 20px;
+  color: $footer-color;
+}

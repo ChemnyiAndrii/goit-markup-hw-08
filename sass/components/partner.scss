@@ -1,0 +1,65 @@
+/*наші партнери*/
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.partner {
+  @extend %Flex-conteiner;
+  margin-top: 50px;
+  display: flex;
+   li {
+    @extend %Flex-conteiner;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $grey-light;
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: $timing-transform;
+    transition-timing-function: $timing-function;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+    &:hover {
+        border: 1px solid  $nav-color;
+      }
+    &:hover .partner-icon svg {
+        fill:  $nav-color;
+      }
+  }
+}
+.partner-icon {
+  width: 170px;
+  height: 90px;
+  @extend %Flex-conteiner;
+   svg {
+    fill: $grey-light;
+    transition-property: fill;
+    transition-duration: $timing-transform;
+    transition-timing-function: $timing-function;
+  }
+}
+.partner-icon-1 {
+  width: 44px;
+  height: 49px;
+}
+.partner-icon-2 {
+  width: 40px;
+  height: 52px;
+}
+.partner-icon-3 {
+  width: 41px;
+  height: 43px;
+}
+.partner-icon-4 {
+  width: 80px;
+  height: 42px;
+}
+.partner-icon-5 {
+  width: 59px;
+  height: 47px;
+}
+.partner-icon-6 {
+  width: 88px;
+  height: 45px;
+}
+
